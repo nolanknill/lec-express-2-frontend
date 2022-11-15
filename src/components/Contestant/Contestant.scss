@@ -1,0 +1,35 @@
+.contestant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 2rem);
+    margin: 0 1rem 2rem;
+    background-color: pink;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+
+    &__image {
+        width: 65%;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        aspect-ratio: 1/1.5;
+        object-fit: cover;
+    }
+
+    &__name {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    &__age {
+        font-size: 0.8rem;
+        color: #333;
+    }
+
+    &__season {
+        font-size: 0.8rem;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+}
