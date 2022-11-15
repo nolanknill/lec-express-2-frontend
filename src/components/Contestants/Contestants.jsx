@@ -10,13 +10,14 @@ const Contestants = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:8080/contestants")
+            .get("http://localhost:8080/contestants?apiKey=123")
             .then(({ data }) => {
                 setContestants(data);
                 setIsLoading(false);
             })
             .catch(error => {
                 setError(true);
+                setIsLoading(false);
                 console.log(error);
             })
     }, []);
